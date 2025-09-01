@@ -1,7 +1,7 @@
 <!-- Project Banner -->
 <h1 align="center">Discord Active Development Badge</h1>
 <p align="center">
-  <em>A simple, open-source tutorial on how to unlock the Discord Developer badge in the easiest way possible.</em>
+  <em>A simple, open-source tutorial on how to unlock the Discord Developer badge.</em>
 </p>
 
 <p align="center">
