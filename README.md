@@ -1,11 +1,11 @@
 <!-- Project Banner -->
-<h1 align="center">Create & Run a Free Discord Bot</h1>
+<h1 align="center">Discord Active Development Badge</h1>
 <p align="center">
   <em>A simple, open-source tutorial on how to unlock the Discord Developer badge in the easiest way possible.</em>
 </p>
 
 <p align="center">
-<img width="154" height="86" alt="image" src="https://github.com/user-attachments/assets/5b454916-ad0e-4c1b-b040-334d5332bca9" />
+<img width="206" height="206" alt="image" src="https://github.com/user-attachments/assets/ea7aca0f-bb48-4977-8bd0-399d79f1fb79" />
 </p>
 
 ---
@@ -20,36 +20,73 @@ In under 15 minutes, you’ll learn how to: <br><br>
 
 ---
 
-## 1. Download This Repo
-
-### Download the ZIP
-Click the green “Code” button → Download ZIP → to upload files to Replit in the next few steps.
-
----
-
-## 2. Set Up Your Replit Environment <br>
+## 1. Set Up Your Replit Environment <br>
 -> Go to [https://replit.com](https://replit.com) <br>
--> Click “Create Repl” → Choose Python <br>
--> Upload these files: <br>
--> bot.py <br>
--> requirements.txt <br>
--> .env.example (rename this to .env in Replit) <br>
+-> Create a free account or login <br>
+-> Import Github files to Replit
 
-## Install the required libraries: <br>
--> In Replit, go to the “Packages” tab (cube icon) <br>
--> Search and install: discord.py
-(or just run: pip install -r requirements.txt in the Shell)
+### Method A (Fastest)
+
+-> Simply input this link into your browser for Replit to automatically import this Github Repository as your own project: <br>
+```
+https://replit.com/import/github/itsAlureon/discord-dev-badge
+```
+-> Click "Import from Github"
+<br>
+
+<img width="1085" height="572" alt="image" src="https://github.com/user-attachments/assets/7b903767-1fe1-4679-9c0f-6686d15b2750" />
+<br>
+
+### Method B
+-> Click "Import code or design" on your Replit dashboard <br>
+-> Click "Github" <br>
+-> Copy and Paste this Github Repo link into the URL section:
+```
+https://github.com/itsAlureon/discord-dev-badge
+```
+-> Click "Import from Github" <br>
+
+## After importing, add the run command
+-> After you've successfully imported, Replit will ask you for a run command. Type in:
+```
+python bot.py
+```
+<img width="458" height="229" alt="image" src="https://github.com/user-attachments/assets/75b52ba5-6d4f-4c62-93c2-a68ebf98bd93" />
+<br>
+-> Click 'Confirm and Close'
+<br><br>
+
+
+Congrats, your project is now set up. <br><br>
+
+## Now, install the required libraries: <br>
+-> In Replit, open a new tab next to Console and Shell. <br>
+
+<img width="389" height="230" alt="image" src="https://github.com/user-attachments/assets/9ccc75a1-dfa7-4fc1-9b17-c2cd6b3b4608" />
+<br><br>
+
+-> Search for "Dependencies" or "Packages" to open the dependency importer. <br>
+-> Add 'discord.py' and install it. <br>
+<img width="1235" height="463" alt="image" src="https://github.com/user-attachments/assets/74fa3206-5cb0-48b2-b3c7-cb83fd6c2c2f" /> 
+<br>
+
 
 ---
 
 ## 3. Create Your Discord Bot <br>
--> Go to the Discord Developer Portal
--> Click “New Application” → Name it anything you want (i.e. MyBot)
--> Go to the Bot tab → click “Add Bot”
--> Under “Privileged Gateway Intents,” enable:
-Message content (optional)
-/Server Members (optional)
--> Copy your Bot Token from the “Bot” tab
+-> Go to the Discord Developer Portal <br>
+-> Click “New Application” <br>
+-> Name it anything you want (i.e. MrBot) <br><br>
+<img width="441" height="352" alt="image" src="https://github.com/user-attachments/assets/6467315c-c9cc-40e4-8254-78f6b8e1b826" />
+<br>
+
+-> Go to the OAuth2 tab on the Developer Portal <br>
+-> Reset to generate a 'Client Secret' that will be used as your Bot Token <br>
+-> Copy your 'Client Secret' and save it, this is your Bot Token. Do not share this with anyone <br>
+
+<img width="211" height="136" alt="image" src="https://github.com/user-attachments/assets/6bda2966-527b-417d-b66e-067c7af274af" />
+<br>
+
 
 ---
 
@@ -66,7 +103,7 @@ Key: TOKEN
 Value: [Paste your Bot Token here from Step 3]
 ```
 <br>
-Click "Add secret" to save.
+Click "Add secret" to save
 
 <img width="1107" height="54" alt="image" src="https://github.com/user-attachments/assets/74b781c8-f5e8-415c-b431-f4240c89e497" />
 <br>
@@ -74,28 +111,47 @@ Click "Add secret" to save.
 ---
 
 ## 5. Add Your Bot to Your Discord Server <br>
-In the Developer Portal → OAuth2 → URL Generator <br>
 
-Scopes: bot, applications.commands <br>
+-> In the Developer Portal → OAuth2 → URL Generator <br>
 
-Bot permissions:
-Send Messages
-Use Application Commands
+-> Scope Permissions: <br>
+(✓) bot <br>
+(✓) applications.commands <br>
+
+<img width="720" height="480" alt="image" src="https://github.com/user-attachments/assets/61a3b421-e71c-496f-a1e5-81963eb93484" />
+<br><br>
+
+-> Bot Permissions: <br>
+(✓) Send Messages <br>
+(✓) Use Slash Commands <br>
+
+<img width="720" height="480" alt="image" src="https://github.com/user-attachments/assets/18d40f6d-68f5-4138-a595-8aac118c6abe" />
 <br>
 
--> Copy the generated URL and paste it in your browser <br>
--> Choose your server and click “Authorize”
+-> Copy the 'Generated URL' at the bottom of the page and paste it in your browser <br>
+-> Choose your server and click “Authorize” <br><br>
+
+Congrats, now your bot should be in your server!
 
 ---
 
-## 6. Get Your Guild (Server) ID
-In Discord:
-Go to User Settings → Advanced → Enable Developer Mode
-Right-click your server name → Copy Server ID
-Paste that ID in the GUILD_ID = discord.Object(id=...) line inside bot.py (replace the number)
+## 6. Get Your Guild (Server) ID <br>
+-> In Discord, go to User Settings → Advanced → Enable Developer Mode <br>
+
+<img width="1009" height="547" alt="image" src="https://github.com/user-attachments/assets/69559015-77c0-40ca-9268-a89f4380fb51" />
+<br>
+
+-> Right-click your server icon on Discord and "Copy Server ID"
+<br>
+<img width="163" height="61" alt="image" src="https://github.com/user-attachments/assets/13903a72-ca34-48c1-989a-214016fc8c6d" />
+<br>
+
+-> Paste that ID in the GUILD_ID = discord.Object(id=...) line inside the "bot.py" file on Replit (replace the number)
+<img width="1176" height="235" alt="image" src="https://github.com/user-attachments/assets/e91b85c1-1fe1-4acd-aecb-0125381622d8" />
+<br>
 
 ---
-## 6.5 Check your User Settings
+## 6.5 Check your User Settings <br>
 
 Discord will not be able to read your account for commands until you have "Use data to improve Discord" enabled. <br>
 You can enable this in Discord -> User Settings -> Data & Privacy <br>
@@ -150,10 +206,9 @@ Done!
 
 | File              | Description                            |
 |-------------------|----------------------------------------|
-| `bot.py`          | The main bot logic with slash command  |
-| `requirements.txt`| Needed libraries (`discord.py`)        |
-| `.env.example`    | Template for secret token (rename to `.env`) |
+| `bot.py`          | The main python bot logic              |
 | `README.md`       | This guide                             |
+| `LICENSE`         | Open-source MIT License                |
 
 ---
 
